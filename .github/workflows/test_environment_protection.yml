@@ -13,14 +13,14 @@ on:
 
 jobs:
     hello_world_dev:
-        name: 'Perform REST API'
+        name: 'Say hello world from dev'
         environment: dev
         runs-on: ubuntu-latest
         steps:
             - name: 'Someone approved DEV'
               run: echo Approed for DEV
     hello_world_pat:
-        name: 'Perform REST API'
+        name: 'Say hello world from pat'
         environment: pat
         runs-on: ubuntu-latest
         steps:
