@@ -1,4 +1,4 @@
-name: Example of cURL action
+name: Deploy stuff!
 
 on:
   push:
@@ -15,14 +15,14 @@ jobs:
     hello_world_dev:
         name: 'Perform REST API'
         environment: dev
-        runs-on: [self-hosted, linux, x64]
+        runs-on: ubuntu-latest
         steps:
             - name: 'Someone approved DEV'
               run: echo Approed for DEV
     hello_world_pat:
         name: 'Perform REST API'
         environment: pat
-        runs-on: [self-hosted, linux, x64]
+        runs-on: ubuntu-latest
         steps:
             - name: 'Someone approved PAT'
               run: echo Approed for PAT
